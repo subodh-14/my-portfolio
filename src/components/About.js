@@ -1,14 +1,11 @@
 import React,{useState,useEffect} from "react";
 import sanityClient from "../client.js";
 import aboutt from "../about.jpg";
-import imageUrlBuilder from "@sanity/image-url";
-import Blockcontent from "@sanity/block-content-to-react";
+
+
 import mypicture from "../mypicture.jpg"
 
-const builder = imageUrlBuilder(sanityClient);
-function urlFor(source){
-    return builder.image(source);
-}
+
 
 export default function About(){
     const [author,setAuthor] =useState(null);
